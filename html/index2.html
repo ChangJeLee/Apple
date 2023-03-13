@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+
+        <div class="alert-box" id="alert"><p id="title" class="title1"></p>
+        <button onclick="openAlert('none', '')">Close</button>
+        </div>
+
+        <button onclick="openAlert('block', '아이디')">Button 1</button>
+        <button onclick="openAlert('block', '비번')">Button 2</button>
+
+        <script>
+            function openAlert(hole, pwd){
+                document.getElementById('alert').style.display=hole;
+                document.getElementById('title').innerHTML = pwd + '입력하세요';
+            }
+            function openClass(hole){
+                document.getElementsByClassName('title1')[0].style.display=hole;
+                //class name은 중복을 허용하기 때문에 인덱싱 [0]이 필요함
+                }
+            // function closeAlert(hole){
+            //     document.getElementById('alert').style.display=hole;
+            // }
+        </script>
+    </body>
+    </html>
+
+
+    

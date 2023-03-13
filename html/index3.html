@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="/css/main.css">
+    </head>
+    <body>
+
+        <div class="alert-box" id="alert"><p id="title" class="title1"></p>
+        <button id="close">Close</button>
+        </div>
+
+        <button onclick="openAlert('block', '아이디')">Button 1</button>
+        <button onclick="openAlert('block', '비번')">Button 2</button>
+
+        <script>
+            document.getElementById('close').addEventListener('click', function(){ //파라미터자리에 들어가는 함수는 콜백함수라고 함
+                document.getElementById('alert').style.display='none';
+            });
+
+            function openAlert(hole, pwd){
+                document.getElementById('alert').style.display=hole;
+                document.getElementById('title').innerHTML = pwd + '입력하세요';
+            }
+        </script>
+    </body>
+    </html>
