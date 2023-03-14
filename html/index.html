@@ -43,6 +43,7 @@
 
       <p class="hello">안녕</p>
       <button class="test-btn">버튼임</button>
+      <button class="maldik">버튼임</button>
     <script>
         // document.querySelector('.hello').innerHTML='바보';
         // $('.hello').html('또 바꿈');
@@ -58,8 +59,13 @@
     </script>
     
     <script>
+        $('.maldik').on('click', function(){
+            $('.white-bg')[0].style.display = 'block';
+            $('.black-bg')[0].style.display = 'block';
+        });
         $('.btn-danger').on('click', function(){
-            $('.close')[0].classList.toggle('show');
+            $('.white-bg')[0].style.display = 'none';
+            $('.black-bg')[0].style.display = 'none';
         });
     </script>    
 
