@@ -15,7 +15,7 @@
 
     <title>Hello, world!</title>
   </head>
-  <body>
+  <body class = "dark">
 
     <div class="black-bg">
         <div class="white-bg">
@@ -46,14 +46,22 @@
       });
     </script>
 
-    <nav class="navbar navbar-light bg-light" height="0px">
+    <nav class="navbar navbar-dark bg-dark" height="0px">
         <div class="container-fluid">
-          <span class="navbar-brand">Navbar</span>
+          <span class="navbar-brand">JSShop</span>
+          <span class="badge bg-dark">Dark 🔄</span>
           <button class="navbar-toggler" type="button">
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
       </nav> 
+      <script>
+        let 이름 = 'kim'; //재선언이 불가능함, 범위가 중괄호안임
+        const 이름2 = 'kim'; //재선언이 불가능 + 재할당도 X, 범위가 중괄호안임
+        var 이름3 = 'kim'; // 재선언 재할당, 범위는 function임
+      </script>
+
+      </script>
 
       <ul class="list-group">
         <li class="list-group-item">An item</li>
@@ -67,6 +75,34 @@
         <h4>Shirts on Sale</h4>
         <button id="login" class="btn-danger">로그인</button>
       </div>
+
+      <div class="alert alert-danger">
+        5초 이내 구매시 사은품 증정
+      </div>
+      <script>
+         let secNum = 5;
+        setInterval(function() {
+            secNum -= 1;
+            if (secNum != 0) {
+              $('.alert').html(`${secNum}초 이내 구매시 사은품 증정!`);
+            } else if (secNum == 0) {
+              $('.alert').hide();
+            }
+          }, 1000);
+
+      </script>
+    <script>
+    var count = 0;
+
+    $('.badge').on('click', function(){
+      count += 1;
+      if (count % 2 == 1) {
+        $('.badge').html('dark 🔄');
+      } else {
+        $('.badge').html('Dark 🔄');
+      }
+    });
+    </script>
 
     <script>
       $('#login').on('click', function(){
