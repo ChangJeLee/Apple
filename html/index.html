@@ -15,8 +15,8 @@
 
     <title>Hello, world!</title>
   </head>
+  
   <body class = "dark">
-
     <div class="black-bg">
         <div class="white-bg">
             <h4>로그인 하십쇼</h4>
@@ -75,6 +75,29 @@
         <h4>Shirts on Sale</h4>
         <button id="login" class="btn-danger">로그인</button>
       </div>
+    <div style="overflow: hidden">
+      <div class="slide-container">
+        <div class="slide-box">
+          <img src="/img/car1.png">
+        </div>
+    
+        <div class="slide-box">
+          <img src="/img/car2.png">
+        </div>
+        <div class="slide-box">
+          <img src="/img/car3.png">
+        </div>
+      </div>
+    </div>
+
+    <button class="slide-1">1</button>
+    <button class="slide-2">2</button>
+    <button class="slide-3">3</button>
+    <button class="next">다음</button>
+    <button class="before">이전</button>
+
+
+
 
       <div class="alert alert-danger">
         5초 이내 구매시 사은품 증정
@@ -97,7 +120,7 @@
     $('.badge').on('click', function(){
       count += 1;
       if (count % 2 == 1) {
-        $('.badge').html('dark 🔄');
+        $('.badge').html('White 🔄');
       } else {
         $('.badge').html('Dark 🔄');
       }
@@ -117,6 +140,6 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
- 
+    <script src="/js/slide.js"></script>
   </body>
 </html>
