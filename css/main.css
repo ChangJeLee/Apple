@@ -33,7 +33,7 @@
     height : 100%;
     position : fixed;
     background : rgba(0,0,0,0.5);
-    z-index : 5;
+    z-index : 6;
     padding: 30px;
     visibility: hidden;
     opacity: 0;
@@ -53,7 +53,7 @@
 
 .main-bg {
     padding: 100px 20px;
-    background: lightgray;
+    background: black;
 }
 
 .dark {
@@ -74,4 +74,5 @@
 .slide-box img {
   width: 100%;
 }
+
 
