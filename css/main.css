@@ -13,6 +13,10 @@
     display: none;
 }
 
+.mt-hide {
+  display: none;
+}
+
 .show {
     display: block;
 }

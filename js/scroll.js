@@ -4,10 +4,11 @@ $('.lorem').on('scroll', function() {
   var top = document.querySelector('.lorem').scrollTop;
   var realScroll = document.querySelector('.lorem').scrollHeight;
   var divHei = document.querySelector('.lorem').clientHeight;
-  if(top + divHei > realScroll - 1){
+  if(top + divHei == realScroll){
     alert('뚜두등장!');
   }
 });
+
 $(window).on('scroll', function(){
     if (window.scrollY > 100) {
       $('.navbar-brand').css('font-size', '10px');
