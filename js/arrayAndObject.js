@@ -1,7 +1,7 @@
 var car = ['소나타', 50000, 'white'];
-console.log(car[0]);
+//console.log(car[0]);
 car[0] = '그랜져';
-console.log(car[0]);
+//console.log(car[0]);
 
 // var car2 = {
 // // key : value
