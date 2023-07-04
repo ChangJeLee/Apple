@@ -60,7 +60,7 @@
     <div style="overflow: hidden">
       <div class="slide-container">
         <div class="slide-box">
-          <img src="/img/car1.png">
+          <img src="/img/car1.png" draggable="false">
         </div>
         <div class="slide-box">
           <img src="/img/car2.png">
@@ -70,6 +70,14 @@
         </div>
       </div>
     </div>
+    <!-- 
+      1. 내가 드래그한 거리만큼 박스도 왼쪽으로 움직임 
+      2. 손놓으면 둘째사진 보임 
+        > 100px 이상 이동시 둘째 사진 보임 아니면 첫번째 사진 보임
+               -->
+
+    
+
 
     <button class="slide-1">1</button>
     <button class="slide-2">2</button>
@@ -94,5 +102,6 @@
     <script src="/js/togglebar.js"></script>
     <script src="/js/returnHomework.js"></script>
     <script src="/js/scroll.js"></script>
+    <script src="/js/swipe.js"></script>
   </body>
 </html>
